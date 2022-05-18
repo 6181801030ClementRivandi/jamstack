@@ -8,14 +8,12 @@ export default function PostPage(props) {
             <title>Jamstack | Post</title>
             </Head>
             <p>ini adalah halaman post</p>  
-            {dataPost.map(post => {
-                return (
+            {dataPost.map(post => (
                     <>
                         <p>{post.title}</p>
                         <p>{post.tags}</p>
                     </>
-                )
-            })}
+                ))}
         </> 
     );
 }
